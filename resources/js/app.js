@@ -44,5 +44,5 @@ message_form.addEventListener('submit', function (e) {
 window.Echo.channel('chat')
 .listen('.message', (e) => {
     // console.log(e); // To log di result into console
-    messages_el.innerHTML += '<strong class="message"><strong></strong>' + e.username + ':</strong>' + e.message + '</div>';
+    messages_el.innerHTML += '<strong class="message"><strong>' + e.username + ':</strong>' + e.message + '</div>';
 });

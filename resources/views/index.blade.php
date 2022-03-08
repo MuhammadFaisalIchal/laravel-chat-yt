@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Chat</title>
 
+    {{-- Include our own css --}}
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
         </form>
     </div>
 
+    {{-- Include our own javascript --}}
     <script src="./js/app.js"></script>
 </body>
 </html>

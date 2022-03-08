@@ -25,8 +25,8 @@ class Message implements ShouldBroadcast
      */
     public function __construct($username, $message)
     {
-        $this->$username = $username;
-        $this->$message = $message;
+        $this->username = $username;
+        $this->message = $message;
     }
 
     /**
@@ -42,8 +42,10 @@ class Message implements ShouldBroadcast
 
     /**
      * Untuk menyebarkan pesan sebagai nama 'message'
+     * Kalau tidak menggunakan ini, akan butuh menggunakan namespace
      */
     public function broadcastAs() {
+        // can be app/event/message
         return 'message';
     }
 }

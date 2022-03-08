@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Menerima dan menyebarkan message
+// Menerima dan menyebarkan message. Memanggil konstruktor dari message
 Route::post('/send-message', function (Request $request) {
     event(
         new Message(
